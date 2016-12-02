@@ -1,0 +1,17 @@
+package tests;
+
+import org.junit.Test;
+import org.openqa.selenium.By;
+
+public class Logout extends JunitMaster
+{
+	@Test
+	public void logoutTc()
+	{
+		Thread.sleep(5000);
+		driver.findElement(By.id("welcome")).click();
+		driver.findElement(By.linkText("Logout")).click();
+	}
+	
+
+}
